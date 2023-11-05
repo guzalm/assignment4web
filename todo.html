@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" type="text/css" href="todo.css" />
+  </head>
+  <body>
+    <div class="tasks">
+      <button onclick="myFunction()">What to do</button>
+
+      <script>
+        function myFunction() {
+          alert("Hello! You can add something new!");
+        }
+      </script>
+      <h1>To-Do List</h1>
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList">
+        <li>
+          <input type="checkbox" checked />
+          <label>
+            <h2>
+              Buy new jacket
+              <span>for you &amp; your (wo)man</span>
+            </h2>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" checked />
+          <label>
+            <h2>
+              Buy bag
+              <span>new&amp;&amp;comfy</span>
+            </h2>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>
+            <h2>
+              Buy T-shirt
+              <span>for all members of the family</span>
+            </h2>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>

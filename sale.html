@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sale.css" />
+    <title>Sale</title>
+  </head>
+  <body>
+    <header>
+      <button onclick="playAudio()" type="button">Play Audio</button>
+      <button onclick="pauseAudio()" type="button">Pause Audio</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>Winter is coming...!</h2>
+      </section>
+
+      <div class="countdown">
+        <div class="timer">
+          <span id="days">00</span>
+          <span id="hours">00</span>
+          <span id="minutes">00</span>
+          <span id="seconds">00</span>
+        </div>
+        <div class="labels">
+          <span>Days</span>
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button onclick="document.getElementById('demo').innerHTML=Date()">
+          The time is?
+        </button>
+        <p id="demo"></p>
+      </div>
+    </main>
+
+    <audio id="myAudio">
+      <source src="Frank Sinatra – Let It Snow.mp3" type="audio/ogg" />
+      <source src="Frank Sinatra – Let It Snow.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div id="dropZone">
+      <div
+        id="dropBox1"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        id="dropBox2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        id="dropBox3"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        id="dropBox4"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+    </div>
+
+    <div id="animals" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img
+        id="1"
+        src="1.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="300"
+      />
+
+      <img
+        id="2"
+        src="4.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="300"
+      />
+
+      <img
+        id="3"
+        src="2.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="300"
+      />
+
+      <img
+        id="4"
+        src="3.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="300"
+      />
+    </div>
+    <script src="sale.js"></script>
+  </body>
+</html>

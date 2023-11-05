@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(147, 200, 252);
+}
+#form-container {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+button {
+  background-color: rgb(239, 239, 244);
+}

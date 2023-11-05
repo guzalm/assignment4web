@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="guzz.css" />
+    <style>
+      .card {
+        display: flex;
+      }
+
+      .card .card-img-top {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      .card .card-body {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Black Bag</h2>
+    <h3>property:</h3>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="bag.jpg"
+                class="card-img-top"
+                alt="Product 1"
+                height="300px"
+                width="300px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black bag</h5>
+                <h6 class="card-text">For woman. New collection</h6>
+                <p id="demo"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="myButton">ORDER</button>
+    <p id="demo"></p>
+    <script>
+      const button = document.getElementById("myButton");
+
+      button.addEventListener("click", function () {
+        alert("Product Ordered!");
+      });
+
+      const product = {
+        firstname: "Black",
+        lastname: "Bag",
+        price: "59$",
+      };
+
+      document.getElementById("demo").innerHTML =
+        product.firstname + " " + product.lastname + " is " + product.price;
+      document.querySelector("h3").style.backgroundColor = "black";
+      product.name = function () {
+        return (this.firstname + " " + this.lastname).toUpperCase();
+      };
+      document.getElementById("demo").innerHTML =
+        "Product name is " + product.name();
+    </script>
+  </body>
+</html>
